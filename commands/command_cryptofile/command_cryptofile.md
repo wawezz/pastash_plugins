@@ -12,6 +12,15 @@ Config example:
 }
 ````
 
+Request example:
+````
+"FileEcryptor": {
+    "sourceFilePath": "/tmp/file.mp3",
+    "destFilePath": "/tmp/file.dat",
+    "key": "encryption key"
+}
+````
+
 Commands list:
 ````
 encryptFile();

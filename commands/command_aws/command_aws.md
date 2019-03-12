@@ -7,13 +7,22 @@ Config example:
     "pluginFieldName": "FileFetch",
     "outputFileField": "destFilePath",
     "nameField": "fileName",
-    "bucketField": "fetchBucket",
+    "bucketField": "bucketName",
     "buckets": {
         "fetchBucket": {
             "accessKeyId": "KEY_ID",
             "secretAccessKey": "KEY"
         }
     }
+}
+````
+
+Request example:
+````
+"FileFetch": {
+    "destFilePath": "/tmp/",
+    "fileName": "file.mp3",
+    "bucketName": "fetchBucket"
 }
 ````
 
