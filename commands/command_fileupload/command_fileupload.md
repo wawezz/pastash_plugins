@@ -16,6 +16,16 @@ Config example:
 }
 ````
 
+Request example:
+````
+"FieTransfer": {
+    "sourceFilePath": "/tmp/",
+    "destFilePath": "/tmp/",
+    "fileName": "file.dat",
+    "fileSize": 1024
+}
+````
+
 Commands list:
 ````
 uploadFile();
