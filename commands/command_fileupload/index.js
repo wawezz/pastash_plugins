@@ -13,18 +13,21 @@ const defaultConf = {
 };
 
 module.exports = function plugin(userConf) {
-  conf = { ...defaultConf, ...userConf };
+  conf = {
+    ...defaultConf,
+    ...userConf
+  };
 
   this.main.uploadFile = async function uploadFile(next) {
     const data = this.data[conf.pluginFieldName];
 
     var ftp = new PromiseFtp();
     ftp.connect({
-      host: conf.host,
-      port: conf.port,
-      user: conf.user,
-      password: conf.password
-    })
+        host: conf.host,
+        port: conf.port,
+        user: conf.user,
+        password: conf.password
+      })
       .then(async () => {
         await ftp.mkdir(data[conf.outputFileField], true);
 
