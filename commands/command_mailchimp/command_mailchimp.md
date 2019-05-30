@@ -29,7 +29,7 @@ Request example:
 for subsribe/unsubsribe use only subscribeData
 for create camping and send email use only emailData
 
-send camping_id if you wont use existing camping, otherwise new ccamping will be created automaticly.
+send camping_id if you want use existing camping, otherwise new ccamping will be created automaticly.
 
 defaulf action type is "send", you can use (cancel-send, create-resend, pause, replicate, resume, schedule, send, test, unschedule)
 
