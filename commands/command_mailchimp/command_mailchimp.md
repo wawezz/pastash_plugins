@@ -3,7 +3,7 @@
 Config example:
 
 ```
-"@voicenter/voicenter_pastash_command_aws": {
+"@voicenter/voicenter_pastash_command_mailchimp": {
     "pluginFieldName": "MailChimp",
     "keyField": "key",
     "subscribeData": {
